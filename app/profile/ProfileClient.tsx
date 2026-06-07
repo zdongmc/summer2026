@@ -16,11 +16,11 @@ type Profile = {
 };
 
 function PrizeStatusBadge({ status }: { status: string | null }) {
-  if (!status || status === 'pending')
-    return <span className="text-xs text-amber-600 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-full">Waiting for Jojo to approve</span>;
   if (status === 'approved')
     return <span className="text-xs text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">Approved! ✓</span>;
-  return <span className="text-xs text-red-600 bg-red-50 border border-red-200 px-2 py-0.5 rounded-full">Ask Jojo to update</span>;
+  if (status === 'rejected')
+    return <span className="text-xs text-red-600 bg-red-50 border border-red-200 px-2 py-0.5 rounded-full">Ask Jojo to update</span>;
+  return null;
 }
 
 export default function ProfileClient({ name }: { name: string }) {
