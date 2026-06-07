@@ -9,22 +9,13 @@ export async function PATCH(request: Request) {
   const { color, avatar, prize_5, prize_10, prize_15 } = await request.json();
 
   if (prize_5 !== undefined) {
-    await sql`
-      UPDATE readers SET prize_5 = ${prize_5?.trim() || null}, prize_5_status = 'pending'
-      WHERE id = ${session.readerId}
-    `;
+    await sql`UPDATE readers SET prize_5 = ${prize_5?.trim() || null} WHERE id = ${session.readerId}`;
   }
   if (prize_10 !== undefined) {
-    await sql`
-      UPDATE readers SET prize_10 = ${prize_10?.trim() || null}, prize_10_status = 'pending'
-      WHERE id = ${session.readerId}
-    `;
+    await sql`UPDATE readers SET prize_10 = ${prize_10?.trim() || null} WHERE id = ${session.readerId}`;
   }
   if (prize_15 !== undefined) {
-    await sql`
-      UPDATE readers SET prize_15 = ${prize_15?.trim() || null}, prize_15_status = 'pending'
-      WHERE id = ${session.readerId}
-    `;
+    await sql`UPDATE readers SET prize_15 = ${prize_15?.trim() || null} WHERE id = ${session.readerId}`;
   }
   if (color) {
     await sql`UPDATE readers SET color = ${color} WHERE id = ${session.readerId}`;
@@ -51,7 +42,7 @@ export async function GET() {
 
   // Authenticated — return current reader's full profile
   const [reader] = await sql`
-    SELECT id, name, color, avatar, prize_5, prize_5_status, prize_10, prize_10_status, prize_15, prize_15_status
+    SELECT id, name, color, avatar, prize_5, prize_10, prize_15
     FROM readers WHERE id = ${session.readerId}
   `;
   return NextResponse.json(reader ?? null);

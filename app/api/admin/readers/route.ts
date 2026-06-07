@@ -11,11 +11,11 @@ export async function GET(request: NextRequest) {
   if (!checkAdmin(adminPin)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   try {
     const readers = await sql`
-      SELECT r.id, r.name, r.color, r.prize_5, r.prize_5_status, r.prize_10, r.prize_10_status, r.prize_15, r.prize_15_status,
+      SELECT r.id, r.name, r.color, r.prize_5, r.prize_10, r.prize_15,
              COUNT(b.id)::int AS book_count
       FROM readers r
       LEFT JOIN books b ON b.reader_id = r.id
-      GROUP BY r.id, r.name, r.color, r.prize_5, r.prize_5_status, r.prize_10, r.prize_10_status, r.prize_15, r.prize_15_status
+      GROUP BY r.id, r.name, r.color, r.prize_5, r.prize_10, r.prize_15
       ORDER BY r.name
     `;
     return NextResponse.json(readers);

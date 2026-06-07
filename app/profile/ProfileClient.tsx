@@ -8,20 +8,9 @@ type Profile = {
   color: string;
   avatar: string | null;
   prize_5: string | null;
-  prize_5_status: 'pending' | 'approved' | 'rejected' | null;
   prize_10: string | null;
-  prize_10_status: 'pending' | 'approved' | 'rejected' | null;
   prize_15: string | null;
-  prize_15_status: 'pending' | 'approved' | 'rejected' | null;
 };
-
-function PrizeStatusBadge({ status }: { status: string | null }) {
-  if (status === 'approved')
-    return <span className="text-xs text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">Approved! ✓</span>;
-  if (status === 'rejected')
-    return <span className="text-xs text-red-600 bg-red-50 border border-red-200 px-2 py-0.5 rounded-full">Ask Jojo to update</span>;
-  return null;
-}
 
 export default function ProfileClient({ name }: { name: string }) {
   const [profile, setProfile] = useState<Profile | null>(null);
@@ -198,7 +187,7 @@ export default function ProfileClient({ name }: { name: string }) {
                 <span className="text-sm text-gray-500 w-20 flex-shrink-0 pt-0.5">Level 1:</span>
                 <div className="flex-1">
                   {profile.prize_5 ? (
-                    <><p className="text-sm font-medium text-gray-800">{profile.prize_5}</p><div className="mt-1"><PrizeStatusBadge status={profile.prize_5_status} /></div></>
+                    <p className="text-sm font-medium text-gray-800">{profile.prize_5}</p>
                   ) : (
                     <p className="text-sm text-gray-400 italic">Not set yet — tap &ldquo;Edit wishes&rdquo;!</p>
                   )}
@@ -208,7 +197,7 @@ export default function ProfileClient({ name }: { name: string }) {
                 <span className="text-sm text-gray-500 w-20 flex-shrink-0 pt-0.5">Level 2:</span>
                 <div className="flex-1">
                   {profile.prize_10 ? (
-                    <><p className="text-sm font-medium text-gray-800">{profile.prize_10}</p><div className="mt-1"><PrizeStatusBadge status={profile.prize_10_status} /></div></>
+                    <p className="text-sm font-medium text-gray-800">{profile.prize_10}</p>
                   ) : (
                     <p className="text-sm text-gray-400 italic">Not set yet — tap &ldquo;Edit wishes&rdquo;!</p>
                   )}
@@ -218,7 +207,7 @@ export default function ProfileClient({ name }: { name: string }) {
                 <span className="text-sm text-gray-500 w-20 flex-shrink-0 pt-0.5">Level 3:</span>
                 <div className="flex-1">
                   {profile.prize_15 ? (
-                    <><p className="text-sm font-medium text-gray-800">{profile.prize_15}</p><div className="mt-1"><PrizeStatusBadge status={profile.prize_15_status} /></div></>
+                    <p className="text-sm font-medium text-gray-800">{profile.prize_15}</p>
                   ) : (
                     <p className="text-sm text-gray-400 italic">Not set yet — tap &ldquo;Edit wishes&rdquo;!</p>
                   )}

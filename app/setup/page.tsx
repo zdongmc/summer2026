@@ -6,9 +6,7 @@ import { FCPL_DESTINATIONS } from '@/lib/destinations';
 
 type Reader = {
   id: number; name: string; color: string;
-  prize_5: string | null; prize_5_status: string | null;
-  prize_10: string | null; prize_10_status: string | null;
-  prize_15: string | null; prize_15_status: string | null;
+  prize_5: string | null; prize_10: string | null; prize_15: string | null;
   book_count: number;
 };
 
@@ -441,7 +439,7 @@ export default function SetupPage() {
                 detail: r.prize_5
                   ? `Level 1 wish: "${r.prize_5}"`
                   : 'No wish set yet.',
-                done: r.prize_5_status === 'approved',
+                done: false,
               });
             }
             if (count >= 10) {
@@ -451,7 +449,7 @@ export default function SetupPage() {
                 detail: r.prize_10
                   ? `Level 2 wish: "${r.prize_10}"`
                   : 'No wish set yet.',
-                done: r.prize_10_status === 'approved',
+                done: false,
               });
             }
             if (count >= 15) {

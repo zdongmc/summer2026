@@ -10,9 +10,7 @@ import MentionText from '@/app/components/MentionText';
 type Reader = {
   id: number; name: string; color: string; avatar: string | null;
   book_count: string; reading_days: string; destination_count: string;
-  prize_5: string | null; prize_5_status: string | null;
-  prize_10: string | null; prize_10_status: string | null;
-  prize_15: string | null; prize_15_status: string | null;
+  prize_5: string | null; prize_10: string | null; prize_15: string | null;
   now_reading: string | null;
 };
 type ReactionRow = { book_id: number; emoji: string; count: number; reacted_by_me: boolean };
@@ -138,7 +136,7 @@ export default async function Dashboard() {
              COUNT(DISTINCT b.id)::text as book_count,
              COUNT(DISTINCT rd.day)::text as reading_days,
              COUNT(DISTINCT d.id)::text as destination_count,
-             r.prize_5, r.prize_5_status, r.prize_10, r.prize_10_status, r.prize_15, r.prize_15_status,
+             r.prize_5, r.prize_10, r.prize_15,
              r.avatar,
              nr.title as now_reading
       FROM readers r
@@ -151,7 +149,7 @@ export default async function Dashboard() {
         ORDER BY added_date DESC
         LIMIT 1
       ) nr ON true
-      GROUP BY r.id, r.name, r.color, r.avatar, r.prize_5, r.prize_5_status, r.prize_10, r.prize_10_status, r.prize_15, r.prize_15_status, nr.title
+      GROUP BY r.id, r.name, r.color, r.avatar, r.prize_5, r.prize_10, r.prize_15, nr.title
       ORDER BY COUNT(DISTINCT b.id) DESC, r.name
     ` as Reader[];
 
@@ -230,9 +228,9 @@ export default async function Dashboard() {
           const ticketPct = Math.min(100, Math.round((tickets / 20) * 100));
           const isMe = r.id === session.readerId;
 
-          const prize5 = r.prize_5_status === 'approved' ? r.prize_5 : (isMe && r.prize_5 ? r.prize_5 : null);
-          const prize10 = r.prize_10_status === 'approved' ? r.prize_10 : (isMe && r.prize_10 ? r.prize_10 : null);
-          const prize15 = r.prize_15_status === 'approved' ? r.prize_15 : (isMe && r.prize_15 ? r.prize_15 : null);
+          const prize5 = r.prize_5;
+          const prize10 = r.prize_10;
+          const prize15 = r.prize_15;
           const prizeMap: Record<number, string | null> = { 5: prize5, 10: prize10, 15: prize15 };
           const nextReward = next ? (prizeMap[next.books] || next.reward) : null;
 

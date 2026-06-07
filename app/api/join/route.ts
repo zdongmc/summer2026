@@ -36,17 +36,14 @@ export async function POST(request: Request) {
   const pin_hash = await hash(String(pin), 10);
 
   const [reader] = await sql`
-    INSERT INTO readers (name, pin_hash, color, prize_5, prize_5_status, prize_10, prize_10_status, prize_15, prize_15_status)
+    INSERT INTO readers (name, pin_hash, color, prize_5, prize_10, prize_15)
     VALUES (
       ${name.trim()},
       ${pin_hash},
       ${color},
       ${prize_5?.trim() || null},
-      'pending',
       ${prize_10?.trim() || null},
-      'pending',
-      ${prize_15?.trim() || null},
-      'pending'
+      ${prize_15?.trim() || null}
     )
     RETURNING id, name
   `;

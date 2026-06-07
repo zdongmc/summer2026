@@ -11,19 +11,16 @@ export async function POST(request: Request) {
     pin_hash   VARCHAR(255) NOT NULL,
     color      VARCHAR(20)  NOT NULL DEFAULT 'forest',
     prize_5    VARCHAR(500),
-    prize_5_status VARCHAR(10) DEFAULT 'pending' CHECK (prize_5_status IN ('pending','approved','rejected')),
     prize_10   VARCHAR(500),
-    prize_10_status VARCHAR(10) DEFAULT 'pending' CHECK (prize_10_status IN ('pending','approved','rejected')),
     prize_15   VARCHAR(500),
-    prize_15_status VARCHAR(10) DEFAULT 'pending' CHECK (prize_15_status IN ('pending','approved','rejected')),
     created_at TIMESTAMPTZ DEFAULT NOW()
   )`;
   await sql`ALTER TABLE readers ADD COLUMN IF NOT EXISTS prize_5 VARCHAR(500)`;
-  await sql`ALTER TABLE readers ADD COLUMN IF NOT EXISTS prize_5_status VARCHAR(10) DEFAULT 'pending'`;
   await sql`ALTER TABLE readers ADD COLUMN IF NOT EXISTS prize_10 VARCHAR(500)`;
-  await sql`ALTER TABLE readers ADD COLUMN IF NOT EXISTS prize_10_status VARCHAR(10) DEFAULT 'pending'`;
   await sql`ALTER TABLE readers ADD COLUMN IF NOT EXISTS prize_15 VARCHAR(500)`;
-  await sql`ALTER TABLE readers ADD COLUMN IF NOT EXISTS prize_15_status VARCHAR(10) DEFAULT 'pending'`;
+  await sql`ALTER TABLE readers DROP COLUMN IF EXISTS prize_5_status`;
+  await sql`ALTER TABLE readers DROP COLUMN IF EXISTS prize_10_status`;
+  await sql`ALTER TABLE readers DROP COLUMN IF EXISTS prize_15_status`;
 
   await sql`CREATE TABLE IF NOT EXISTS invite_codes (
     id         SERIAL PRIMARY KEY,
