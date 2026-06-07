@@ -74,7 +74,7 @@ export default async function TrackerPage() {
       prize10 = prizeRow?.prize_10 ?? null;
       destRows_data = await sql`
         SELECT name FROM destinations WHERE reader_id = ${session.readerId} ORDER BY visited_date ASC
-      `;
+      ` as { name: string }[];
     } catch {
       // DB not yet set up — show empty tracker
     }

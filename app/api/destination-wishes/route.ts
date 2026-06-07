@@ -11,7 +11,7 @@ export async function GET() {
     WHERE reader_id = ${session.readerId}
     ORDER BY created_at
   `;
-  return NextResponse.json(rows.map((r: { destination_name: string }) => r.destination_name));
+  return NextResponse.json((rows as { destination_name: string }[]).map(r => r.destination_name));
 }
 
 export async function POST(request: Request) {

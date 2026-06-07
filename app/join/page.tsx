@@ -18,6 +18,7 @@ export default function JoinPage() {
   const [color, setColor] = useState('forest');
   const [prize5, setPrize5] = useState('');
   const [prize10, setPrize10] = useState('');
+  const [prize15, setPrize15] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState('');
 
@@ -47,6 +48,7 @@ export default function JoinPage() {
         name, pin, color,
         prize_5: prize5 || null,
         prize_10: prize10 || null,
+        prize_15: prize15 || null,
       }),
     });
     if (res.ok) {

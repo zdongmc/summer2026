@@ -12,7 +12,7 @@ export async function GET() {
     WHERE reader_id = ${session.readerId}
     ORDER BY day DESC
   `;
-  const days: string[] = rows.map((r: { day: string }) => r.day);
+  const days: string[] = (rows as { day: string }[]).map(r => r.day);
   return NextResponse.json({
     count: days.length,
     loggedToday: days.some(d => d === new Date().toISOString().split('T')[0]),
@@ -49,7 +49,7 @@ export async function POST(request: Request) {
   const rows = await sql`
     SELECT day::text FROM reading_days WHERE reader_id = ${session.readerId} ORDER BY day DESC
   `;
-  const days: string[] = rows.map((r: { day: string }) => r.day);
+  const days: string[] = (rows as { day: string }[]).map(r => r.day);
   return NextResponse.json({
     count: days.length,
     loggedToday: days.some(d => d === new Date().toISOString().split('T')[0]),
@@ -74,7 +74,7 @@ export async function DELETE(request: Request) {
   const rows = await sql`
     SELECT day::text FROM reading_days WHERE reader_id = ${session.readerId} ORDER BY day DESC
   `;
-  const days: string[] = rows.map((r: { day: string }) => r.day);
+  const days: string[] = (rows as { day: string }[]).map(r => r.day);
   return NextResponse.json({
     count: days.length,
     loggedToday: days.some(d => d === new Date().toISOString().split('T')[0]),
