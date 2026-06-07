@@ -116,6 +116,8 @@ Parents manage sign-ups and logging independently.
 
 ## The App
 
+**Live URL:** https://summerproject-teal.vercel.app
+**GitHub:** https://github.com/zdongmc/summer2026
 **Stack:** Next.js 15 + Neon (Postgres) + Vercel
 **Auth:** PIN-based login per reader; admin PIN for Jojo via env var `ADMIN_PIN`
 
