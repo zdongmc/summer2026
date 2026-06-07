@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@page {
+  size: landscape;
+  margin: 0.5in;
+}
+
+@media print {
+  header, footer, nav { display: none !important; }
+  .no-print { display: none !important; }
+  body { background: white !important; }
+  svg[role="img"] {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    max-height: 95vh !important;
+  }
+}

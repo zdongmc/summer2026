@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="680" viewBox="0 0 680 820" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Summer Reading Tracker 2026</title>
+  <desc>A colorful printable reading tracker with 20 book spines to color in, milestone rewards, and program checklists</desc>
+
+  <!-- Background banner -->
+  <rect x="0" y="0" width="680" height="80" fill="#E1F5EE"/>
+  <rect x="0" y="74" width="680" height="6" fill="#1D9E75"/>
+
+  <!-- Title -->
+  <text x="340" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#085041">My Summer Reading Adventure 2026</text>
+  <text x="340" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#0F6E56">Color in a book spine every day you read! Reach the milestones to earn your prizes.</text>
+
+  <!-- Shelf label -->
+  <text x="40" y="105" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5F5E5A">MY BOOKSHELF</text>
+
+  <!-- Shelf 1 plank -->
+  <rect x="30" y="200" width="620" height="12" rx="3" fill="#B4B2A9"/>
+  <rect x="28" y="196" width="4" height="20" rx="2" fill="#888780"/>
+  <rect x="648" y="196" width="4" height="20" rx="2" fill="#888780"/>
+
+  <!-- Books 1-10 -->
+  <rect x="38" y="115" width="52" height="85" rx="4" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="1.5"/>
+  <text x="64" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#AFA9EC">1</text>
+  <text x="64" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#534AB7" transform="rotate(-90,64,158)">Book 1</text>
+
+  <rect x="98" y="118" width="52" height="82" rx="4" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="1.5"/>
+  <text x="124" y="133" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5DCAA5">2</text>
+  <text x="124" y="183" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#0F6E56" transform="rotate(-90,124,158)">Book 2</text>
+
+  <rect x="158" y="112" width="52" height="88" rx="4" fill="#FAECE7" stroke="#F0997B" stroke-width="1.5"/>
+  <text x="184" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#F0997B">3</text>
+  <text x="184" y="183" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#993C1D" transform="rotate(-90,184,156)">Book 3</text>
+
+  <rect x="218" y="120" width="52" height="80" rx="4" fill="#FBEAF0" stroke="#ED93B1" stroke-width="1.5"/>
+  <text x="244" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#ED93B1">4</text>
+  <text x="244" y="183" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#993556" transform="rotate(-90,244,158)">Book 4</text>
+
+  <rect x="278" y="115" width="52" height="85" rx="4" fill="#E6F1FB" stroke="#85B7EB" stroke-width="1.5"/>
+  <text x="304" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#85B7EB">5</text>
+  <text x="304" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#185FA5" transform="rotate(-90,304,158)">Book 5</text>
+
+  <rect x="338" y="117" width="52" height="83" rx="4" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1.5"/>
+  <text x="364" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#EF9F27">6</text>
+  <text x="364" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#854F0B" transform="rotate(-90,364,157)">Book 6</text>
+
+  <rect x="398" y="113" width="52" height="87" rx="4" fill="#EAF3DE" stroke="#97C459" stroke-width="1.5"/>
+  <text x="424" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#97C459">7</text>
+  <text x="424" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#3B6D11" transform="rotate(-90,424,157)">Book 7</text>
+
+  <rect x="458" y="119" width="52" height="81" rx="4" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1.5"/>
+  <text x="484" y="134" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#7F77DD">8</text>
+  <text x="484" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#3C3489" transform="rotate(-90,484,157)">Book 8</text>
+
+  <rect x="518" y="115" width="52" height="85" rx="4" fill="#FCEBEB" stroke="#F09595" stroke-width="1.5"/>
+  <text x="544" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#F09595">9</text>
+  <text x="544" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#A32D2D" transform="rotate(-90,544,158)">Book 9</text>
+
+  <rect x="578" y="116" width="52" height="84" rx="4" fill="#E1F5EE" stroke="#1D9E75" stroke-width="2"/>
+  <text x="604" y="131" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1D9E75">10</text>
+  <text x="604" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#085041" transform="rotate(-90,604,157)">Book 10</text>
+
+  <!-- Milestone after book 5 -->
+  <rect x="256" y="212" width="130" height="26" rx="13" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1.5"/>
+  <text x="321" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#854F0B">Madmia socks!</text>
+
+  <!-- Milestone after book 10 -->
+  <rect x="534" y="212" width="110" height="26" rx="13" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1.5"/>
+  <text x="589" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#3C3489">Big reward!</text>
+
+  <!-- Shelf 2 plank -->
+  <rect x="30" y="378" width="620" height="12" rx="3" fill="#B4B2A9"/>
+  <rect x="28" y="374" width="4" height="20" rx="2" fill="#888780"/>
+  <rect x="648" y="374" width="4" height="20" rx="2" fill="#888780"/>
+
+  <!-- Books 11-20 -->
+  <rect x="38" y="293" width="52" height="85" rx="4" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+  <text x="64" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#D4537E">11</text>
+  <text x="64" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#72243E" transform="rotate(-90,64,336)">Book 11</text>
+
+  <rect x="98" y="296" width="52" height="82" rx="4" fill="#E6F1FB" stroke="#378ADD" stroke-width="1.5"/>
+  <text x="124" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#378ADD">12</text>
+  <text x="124" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#0C447C" transform="rotate(-90,124,336)">Book 12</text>
+
+  <rect x="158" y="290" width="52" height="88" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="1.5"/>
+  <text x="184" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#BA7517">13</text>
+  <text x="184" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#633806" transform="rotate(-90,184,334)">Book 13</text>
+
+  <rect x="218" y="298" width="52" height="80" rx="4" fill="#EAF3DE" stroke="#639922" stroke-width="1.5"/>
+  <text x="244" y="313" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#639922">14</text>
+  <text x="244" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#27500A" transform="rotate(-90,244,336)">Book 14</text>
+
+  <rect x="278" y="293" width="52" height="85" rx="4" fill="#FAECE7" stroke="#D85A30" stroke-width="1.5"/>
+  <text x="304" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#D85A30">15</text>
+  <text x="304" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#712B13" transform="rotate(-90,304,336)">Book 15</text>
+
+  <rect x="338" y="295" width="52" height="83" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.5"/>
+  <text x="364" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#534AB7">16</text>
+  <text x="364" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#26215C" transform="rotate(-90,364,335)">Book 16</text>
+
+  <rect x="398" y="291" width="52" height="87" rx="4" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1.5"/>
+  <text x="424" y="306" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1D9E75">17</text>
+  <text x="424" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#04342C" transform="rotate(-90,424,335)">Book 17</text>
+
+  <rect x="458" y="297" width="52" height="81" rx="4" fill="#FCEBEB" stroke="#E24B4A" stroke-width="1.5"/>
+  <text x="484" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#E24B4A">18</text>
+  <text x="484" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#501313" transform="rotate(-90,484,335)">Book 18</text>
+
+  <rect x="518" y="293" width="52" height="85" rx="4" fill="#FBEAF0" stroke="#993556" stroke-width="1.5"/>
+  <text x="544" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#993556">19</text>
+  <text x="544" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#4B1528" transform="rotate(-90,544,336)">Book 19</text>
+
+  <rect x="578" y="288" width="52" height="90" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="2.5"/>
+  <text x="604" y="303" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#EF9F27">&#9733;</text>
+  <text x="604" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#412402" transform="rotate(-90,604,333)">Book 20!</text>
+
+  <!-- Milestone after book 12 -->
+  <rect x="56" y="390" width="160" height="26" rx="13" fill="#E6F1FB" stroke="#378ADD" stroke-width="1.5"/>
+  <text x="136" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0C447C">Usha Vance complete!</text>
+
+  <!-- Milestone after book 20 -->
+  <rect x="510" y="390" width="138" height="26" rx="13" fill="#FAEEDA" stroke="#EF9F27" stroke-width="2"/>
+  <text x="579" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#412402">Summer champion!</text>
+
+  <!-- Reading days section -->
+  <text x="40" y="450" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5F5E5A">READING DAYS — color a circle each day you read (goal: 20 days)</text>
+
+  <!-- Circles row 1: 1-10 -->
+  <circle cx="64" cy="480" r="17" fill="none" stroke="#9FE1CB" stroke-width="2"/>
+  <text x="64" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">1</text>
+  <circle cx="106" cy="480" r="17" fill="none" stroke="#9FE1CB" stroke-width="2"/>
+  <text x="106" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">2</text>
+  <circle cx="148" cy="480" r="17" fill="none" stroke="#9FE1CB" stroke-width="2"/>
+  <text x="148" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">3</text>
+  <circle cx="190" cy="480" r="17" fill="none" stroke="#9FE1CB" stroke-width="2"/>
+  <text x="190" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">4</text>
+  <circle cx="232" cy="480" r="17" fill="none" stroke="#9FE1CB" stroke-width="2"/>
+  <text x="232" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">5</text>
+  <circle cx="274" cy="480" r="17" fill="none" stroke="#9FE1CB" stroke-width="2"/>
+  <text x="274" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">6</text>
+  <circle cx="316" cy="480" r="17" fill="none" stroke="#9FE1CB" stroke-width="2"/>
+  <text x="316" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">7</text>
+  <circle cx="358" cy="480" r="17" fill="none" stroke="#9FE1CB" stroke-width="2"/>
+  <text x="358" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">8</text>
+  <circle cx="400" cy="480" r="17" fill="none" stroke="#9FE1CB" stroke-width="2"/>
+  <text x="400" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">9</text>
+  <circle cx="442" cy="480" r="17" fill="none" stroke="#9FE1CB" stroke-width="2"/>
+  <text x="442" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">10</text>
+
+  <!-- Circles 11-20 -->
+  <circle cx="484" cy="480" r="17" fill="none" stroke="#FAC775" stroke-width="2"/>
+  <text x="484" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">11</text>
+  <circle cx="526" cy="480" r="17" fill="none" stroke="#FAC775" stroke-width="2"/>
+  <text x="526" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">12</text>
+  <circle cx="568" cy="480" r="17" fill="none" stroke="#FAC775" stroke-width="2"/>
+  <text x="568" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">13</text>
+  <circle cx="610" cy="480" r="17" fill="none" stroke="#FAC775" stroke-width="2"/>
+  <text x="610" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">14</text>
+  <circle cx="64" cy="522" r="17" fill="none" stroke="#FAC775" stroke-width="2"/>
+  <text x="64" y="527" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">15</text>
+  <circle cx="106" cy="522" r="17" fill="none" stroke="#FAC775" stroke-width="2"/>
+  <text x="106" y="527" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">16</text>
+  <circle cx="148" cy="522" r="17" fill="none" stroke="#FAC775" stroke-width="2"/>
+  <text x="148" y="527" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">17</text>
+  <circle cx="190" cy="522" r="17" fill="none" stroke="#FAC775" stroke-width="2"/>
+  <text x="190" y="527" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">18</text>
+  <circle cx="232" cy="522" r="17" fill="none" stroke="#FAC775" stroke-width="2"/>
+  <text x="232" y="527" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5F5E5A">19</text>
+  <circle cx="274" cy="522" r="17" fill="none" stroke="#1D9E75" stroke-width="3"/>
+  <text x="274" y="527" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#085041">20!</text>
+
+  <!-- FCPL badge at day 20 -->
+  <rect x="300" y="506" width="168" height="26" rx="13" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1.5"/>
+  <text x="384" y="524" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#085041">FCPL challenge done!</text>
+
+  <!-- Divider -->
+  <rect x="30" y="560" width="620" height="1.5" rx="1" fill="#D3D1C7"/>
+
+  <!-- Programs checklist -->
+  <text x="40" y="584" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5F5E5A">PROGRAM CHECKLISTS</text>
+
+  <!-- MCPL box -->
+  <rect x="30" y="596" width="190" height="140" rx="8" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="1.5"/>
+  <text x="125" y="616" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#085041">MCPL (Montgomery Co.)</text>
+  <text x="125" y="633" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0F6E56">Goal: 3 weeks + 6 weeks reading</text>
+  <rect x="46" y="643" width="12" height="12" rx="2" fill="white" stroke="#1D9E75" stroke-width="1.5"/>
+  <text x="66" y="654" font-family="Arial, sans-serif" font-size="11" fill="#085041">Week 3 — Nationals tix</text>
+  <rect x="46" y="663" width="12" height="12" rx="2" fill="white" stroke="#1D9E75" stroke-width="1.5"/>
+  <text x="66" y="674" font-family="Arial, sans-serif" font-size="11" fill="#085041">Week 6 — free book</text>
+  <rect x="46" y="683" width="12" height="12" rx="2" fill="white" stroke="#1D9E75" stroke-width="1.5"/>
+  <text x="66" y="694" font-family="Arial, sans-serif" font-size="11" fill="#085041">Jul 15 ticket deadline</text>
+  <rect x="46" y="703" width="12" height="12" rx="2" fill="white" stroke="#1D9E75" stroke-width="1.5"/>
+  <text x="66" y="714" font-family="Arial, sans-serif" font-size="11" fill="#085041">Aug 16 final drawing</text>
+
+  <!-- Usha Vance box -->
+  <rect x="245" y="596" width="190" height="140" rx="8" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="1.5"/>
+  <text x="340" y="616" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#26215C">Usha Vance Challenge</text>
+  <text x="340" y="633" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#534AB7">Goal: 12 books by Sep 4</text>
+  <rect x="261" y="643" width="12" height="12" rx="2" fill="white" stroke="#7F77DD" stroke-width="1.5"/>
+  <text x="281" y="654" font-family="Arial, sans-serif" font-size="11" fill="#26215C">Book 12 reached</text>
+  <rect x="261" y="663" width="12" height="12" rx="2" fill="white" stroke="#7F77DD" stroke-width="1.5"/>
+  <text x="281" y="674" font-family="Arial, sans-serif" font-size="11" fill="#26215C">Submit log by Sep 5</text>
+  <text x="281" y="688" font-family="Arial, sans-serif" font-size="10" fill="#534AB7">whitehouse.gov/read</text>
+  <rect x="261" y="698" width="12" height="12" rx="2" fill="white" stroke="#7F77DD" stroke-width="1.5"/>
+  <text x="281" y="709" font-family="Arial, sans-serif" font-size="11" fill="#26215C">Prize + WH visit raffle</text>
+
+  <!-- FCPL box -->
+  <rect x="460" y="596" width="190" height="140" rx="8" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1.5"/>
+  <text x="555" y="616" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#412402">FCPL (Frederick Co.)</text>
+  <text x="555" y="633" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#633806">Goal: 20 reading days</text>
+  <rect x="476" y="643" width="12" height="12" rx="2" fill="white" stroke="#BA7517" stroke-width="1.5"/>
+  <text x="496" y="654" font-family="Arial, sans-serif" font-size="11" fill="#412402">Log on Beanstack app</text>
+  <rect x="476" y="663" width="12" height="12" rx="2" fill="white" stroke="#BA7517" stroke-width="1.5"/>
+  <text x="496" y="674" font-family="Arial, sans-serif" font-size="11" fill="#412402">Jul 15 ticket deadline</text>
+  <rect x="476" y="683" width="12" height="12" rx="2" fill="white" stroke="#BA7517" stroke-width="1.5"/>
+  <text x="496" y="694" font-family="Arial, sans-serif" font-size="11" fill="#412402">Aug 15 ticket deadline</text>
+  <rect x="476" y="703" width="12" height="12" rx="2" fill="white" stroke="#BA7517" stroke-width="1.5"/>
+  <text x="496" y="714" font-family="Arial, sans-serif" font-size="11" fill="#412402">Visit destinations too!</text>
+
+  <!-- Footer -->
+  <rect x="0" y="754" width="680" height="1.5" fill="#D3D1C7"/>
+  <text x="340" y="773" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#888780">Color each book spine when you finish it. Write the title on the spine. Have fun!</text>
+  <text x="40" y="800" font-family="Arial, sans-serif" font-size="12" fill="#5F5E5A">Reader's name: _______________________________</text>
+  <text x="430" y="800" font-family="Arial, sans-serif" font-size="12" fill="#5F5E5A">Summer 2026</text>
+</svg>
